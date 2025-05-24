@@ -1,5 +1,47 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: rgb(46, 10, 136);
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    position: flex;
+}
+
+.top-suit {
+    position: column;
+    top: 0;
+    left: 10px;
+    font-size: 100px;
+}
+
+.bottom-suit {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 100px;
+    transform: rotate(360deg);
+}
+
+.card-value {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    font-size: 100px;
+    transform: translate(-50%, -50%);
+}
+
+.heart, .diamond {
+    color: rgb(0, 255, 8);
+}
+
+.spade, .club {
+  color: rgb(0, 0, 0);
+}
+
+.card-value {
+  color: rgb(160, 209, 25) !important;
 }
